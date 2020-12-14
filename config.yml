@@ -5,84 +5,84 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: JMS-281447@c15s1.jamjams.net:57615, server: c15s1.jamjams.net, port: 57615, type: ss, cipher: aes-256-gcm, password: uqBVusmhtK}
-  - {name: JMS-281447@c15s2.jamjams.net:57615, server: c15s2.jamjams.net, port: 57615, type: ss, cipher: aes-256-gcm, password: uqBVusmhtK}
-  - {name: JMS-281447@c15s3.jamjams.net:57615, server: c15s3.jamjams.net, port: 57615, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
-  - {name: JMS-281447@c15s5.jamjams.net:57615, server: c15s5.jamjams.net, port: 57615, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
-  - {name: JMS-281447@c15s801.jamjams.net:57615, server: c15s801.jamjams.net, port: 57615, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
+  - {name: JMS-281447@c15s1.jamjams.net:30922, server: c15s1.jamjams.net, port: 30922, type: ss, cipher: aes-256-gcm, password: uqBVusmhtK}
+  - {name: JMS-281447@c15s2.jamjams.net:30922, server: c15s2.jamjams.net, port: 30922, type: ss, cipher: aes-256-gcm, password: uqBVusmhtK}
+  - {name: JMS-281447@c15s3.jamjams.net:30922, server: c15s3.jamjams.net, port: 30922, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
+  - {name: JMS-281447@c15s5.jamjams.net:30922, server: c15s5.jamjams.net, port: 30922, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
+  - {name: JMS-281447@c15s801.jamjams.net:30922, server: c15s801.jamjams.net, port: 30922, type: vmess, uuid: e564e84c-3302-4137-88df-5507ba9a9d36, alterId: 8, cipher: auto, tls: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +105,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JMS-281447@c15s1.jamjams.net:57615
-      - JMS-281447@c15s2.jamjams.net:57615
-      - JMS-281447@c15s3.jamjams.net:57615
-      - JMS-281447@c15s5.jamjams.net:57615
-      - JMS-281447@c15s801.jamjams.net:57615
+      - JMS-281447@c15s1.jamjams.net:30922
+      - JMS-281447@c15s2.jamjams.net:30922
+      - JMS-281447@c15s3.jamjams.net:30922
+      - JMS-281447@c15s5.jamjams.net:30922
+      - JMS-281447@c15s801.jamjams.net:30922
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
